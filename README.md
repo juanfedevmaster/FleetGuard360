@@ -4,8 +4,6 @@
 
 AuthService es un microservicio desarrollado en **.NET 8** que forma parte de la arquitectura distribuida del sistema **FleetGuard360**. Su función principal es gestionar la autenticación de usuarios mediante **JWT (JSON Web Tokens)**, con soporte para múltiples roles como **Administrador, Operador, y cliente**.
 
----
-
 ## 🚀 Características
 
 - Registro de usuarios con hash seguro de contraseñas (BCrypt)
@@ -14,8 +12,6 @@ AuthService es un microservicio desarrollado en **.NET 8** que forma parte de la
 - Autenticación centralizada para microservicios
 - Integración sencilla con API Gateway (YARP, Azure API Mgmt, etc.)
 - Roles y claims personalizados incluidos en el token
-
----
 
 ## 📦 Requisitos
 
@@ -26,86 +22,28 @@ AuthService es un microservicio desarrollado en **.NET 8** que forma parte de la
 
 ---
 
-## ⚙️ Instalación
+# 💊 Pharma360WebApi
 
-1. Clona este repositorio:
-   ```bash
-   git clone https://github.com/tu_usuario/AuthService.git
-   cd AuthService
-2. Configura la cadena de conexión en appsettings.json:
+Microservicio encargado de la gestión de ventas, compras e inventario para el sistema Pharma360.
 
-   ```json
-    "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Database=FleetAuthDB;Trusted_Connection=True;"
-    }
-    ```
-3. Aplica las migraciones (si usas EF Core):
-   ```bash
-   dotnet ef database update
-4. Ejecuta la API:
-   ```bash
-   dotnet run
-5. Accede a la documentación Swagger en:
-   ```bash
-   https://localhost:5001/swagger
----
-# 🔑 Endpoints disponibles
+## 🚀 Tecnologías
 
-| Método | Ruta | Descripción |
-|-----------|-----------|-----------|
-| POST    | /api/auth/register    | Registro de nuevo usuario    |
-| POST    | /api/auth/login    | Login y generación de token JWT    |
+- ASP.NET Core 8
+- Entity Framework Core 8
+- SQL Server
+- Arquitectura en capas (Models, DTOs, Services, Controllers)
+- Swagger UI
 
----
-# 🔐 JWT
+## 🧠 Funcionalidad
 
-El servicio emite tokens JWT que incluyen:
+- Registro de ventas con detalle (transaccional)
+- Registro de compras con detalle (transaccional)
+- Control de stock automático
+- Gestión de productos, clientes, proveedores
+- Consultas con detalles anidados
 
-```bash sub```: ID del usuario
-
-```bash name```: nombre de usuario
-
-```bash role```: rol (Admin, Supervisor, etc.)
-
-Ejemplo de JWT payload:
- ```json
-  {
-  "sub": "794f4f35-3d27-43dc-9454-fb658950bb1b",
-  "name": "admin1",
-  "role": "Admin",
-  "permission": [
-    "perm.create",
-    "perm.delete",
-    "perm.read",
-    "perm.update"
-  ],
-  "exp": 1745387907,
-  "iss": "FleetGuard360.Auth",
-  "aud": "FleetGuard360.API"
-}
- ```
----
-# 🧱 Estructura del Proyecto
-
-```pgsql
-AuthService/
-├── Controllers/
-├── Services/
-├── appsettings.json
-├── Program.cs
-└── AuthService.csproj
-
-ApiGateway.Data/
-├── AuthDbContext.cs
-
-ApiGateway.Models
-├── DTOs/
-├── Entities/
-├── Helpers/
-```
----
 # 📃 Licencia
-Este proyecto es parte del sistema FleetGuard360, desarrollado con fines educativos y académicos. Puedes adaptarlo para otros sistemas con fines propios o comerciales.
+Este proyecto es parte del sistema Pharma360, desarrollado con fines educativos y académicos. Puedes adaptarlo para otros sistemas con fines propios o comerciales.
 
 # ✉️ Contacto
 Desarrollado por Juan Felipe Quintana Gómez
