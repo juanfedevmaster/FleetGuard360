@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{8F78625B-1558-40C2-BB64-0742CD6E2535}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway.Models", "ApiGateway.Modelos\ApiGateway.Models.csproj", "{791E0C08-E9DB-449C-9D81-BB24D74D7E9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway.Data", "ApiGateway.Data\ApiGateway.Data.csproj", "{5A42C292-A590-41D5-80FE-6BE63214CA48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F78625B-1558-40C2-BB64-0742CD6E2535}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F78625B-1558-40C2-BB64-0742CD6E2535}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F78625B-1558-40C2-BB64-0742CD6E2535}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F78625B-1558-40C2-BB64-0742CD6E2535}.Release|Any CPU.Build.0 = Release|Any CPU
+		{791E0C08-E9DB-449C-9D81-BB24D74D7E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{791E0C08-E9DB-449C-9D81-BB24D74D7E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{791E0C08-E9DB-449C-9D81-BB24D74D7E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{791E0C08-E9DB-449C-9D81-BB24D74D7E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A42C292-A590-41D5-80FE-6BE63214CA48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A42C292-A590-41D5-80FE-6BE63214CA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A42C292-A590-41D5-80FE-6BE63214CA48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A42C292-A590-41D5-80FE-6BE63214CA48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
