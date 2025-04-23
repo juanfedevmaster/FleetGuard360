@@ -28,8 +28,8 @@ namespace Pharma360WebApi
             builder.Services.AddScoped<IProductoService, ProductoService>();
             builder.Services.AddScoped<IClienteService, ClienteService>();
             builder.Services.AddScoped<IProveedorService, ProveedorService>();
-            builder.Services.AddScoped<ICompraService, CompraService>();
             builder.Services.AddScoped<ICompraTransaccionalService, CompraTransaccionalService>();
+            builder.Services.AddScoped<ICompraDetalleService, CompraDetalleService>();
             builder.Services.AddScoped<IVentaTransaccionalService, VentaTransaccionalService>();
             builder.Services.AddScoped<IVentaService, VentaService>();
 
