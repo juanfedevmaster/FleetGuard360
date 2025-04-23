@@ -70,13 +70,19 @@ El servicio emite tokens JWT que incluyen:
 Ejemplo de JWT payload:
  ```json
   {
-    "sub": "b9a5d88c-09c6-43e8-9819-d2e109128b8e",
-    "name": "admin1",
-    "role": "Admin",
-    "exp": 1713955800,
-    "iss": "FleetGuard360.Auth",
-    "aud": "FleetGuard360.API"
-  }
+  "sub": "794f4f35-3d27-43dc-9454-fb658950bb1b",
+  "name": "admin1",
+  "role": "Admin",
+  "permission": [
+    "perm.create",
+    "perm.delete",
+    "perm.read",
+    "perm.update"
+  ],
+  "exp": 1745387907,
+  "iss": "FleetGuard360.Auth",
+  "aud": "FleetGuard360.API"
+}
  ```
 ---
 # 🧱 Estructura del Proyecto
@@ -84,12 +90,18 @@ Ejemplo de JWT payload:
 ```pgsql
 AuthService/
 ├── Controllers/
-├── Data/
-├── Models/
 ├── Services/
 ├── appsettings.json
 ├── Program.cs
 └── AuthService.csproj
+
+ApiGateway.Data/
+├── AuthDbContext.cs
+
+ApiGateway.Models
+├── DTOs/
+├── Entities/
+├── Helpers/
 ```
 ---
 # 📃 Licencia
