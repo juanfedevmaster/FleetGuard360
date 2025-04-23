@@ -105,7 +105,7 @@ ApiGateway.Models
 ```
 ---
 # 📃 Licencia
-Este proyecto es parte del sistema FleetGuard360, desarrollado con fines educativos y académicos. Puedes adaptarlo para otros sistemas con fines propios o comerciales.
+Este proyecto es parte del sistema Pharma360, desarrollado con fines educativos y académicos. Puedes adaptarlo para otros sistemas con fines propios o comerciales.
 
 # ✉️ Contacto
 Desarrollado por Juan Felipe Quintana Gómez
