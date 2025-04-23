@@ -1,8 +1,8 @@
-# FleetGuard360
+# Pharma360 
 
 # 🔐 AuthService - Microservicio de Autenticación para FleetGuard360
 
-AuthService es un microservicio desarrollado en **.NET 8** que forma parte de la arquitectura distribuida del sistema **FleetGuard360**. Su función principal es gestionar la autenticación de usuarios mediante **JWT (JSON Web Tokens)**, con soporte para múltiples roles como **Administrador, Operador, Conductor y Pasajero**.
+AuthService es un microservicio desarrollado en **.NET 8** que forma parte de la arquitectura distribuida del sistema **FleetGuard360**. Su función principal es gestionar la autenticación de usuarios mediante **JWT (JSON Web Tokens)**, con soporte para múltiples roles como **Administrador, Operador, y cliente**.
 
 ---
 
@@ -65,7 +65,7 @@ El servicio emite tokens JWT que incluyen:
 
 ```bash name```: nombre de usuario
 
-```bash role```: rol (Admin, Conductor, etc.)
+```bash role```: rol (Admin, Supervisor, etc.)
 
 Ejemplo de JWT payload:
  ```json
