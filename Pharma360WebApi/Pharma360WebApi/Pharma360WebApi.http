@@ -1,0 +1,6 @@
+@Pharma360WebApi_HostAddress = http://localhost:5002
+
+GET {{Pharma360WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
