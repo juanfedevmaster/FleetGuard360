@@ -1,8 +1,8 @@
 -- Crear la base de datos
-CREATE DATABASE FleetAuthDB;
+CREATE DATABASE Pharma360;
 GO
 
-USE FleetAuthDB;
+USE Pharma360;
 GO
 
 -- Tabla de Usuarios
@@ -70,7 +70,7 @@ GO
 -- Insertar roles por defecto
 INSERT INTO Roles (Id, Name) VALUES
 (NEWID(), 'Admin'),
+(NEWID(), 'Supervisor'),
 (NEWID(), 'Operador'),
-(NEWID(), 'Conductor'),
-(NEWID(), 'Pasajero');
+(NEWID(), 'Cliente');
 GO
