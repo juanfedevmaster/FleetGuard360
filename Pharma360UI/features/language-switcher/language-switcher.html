@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/features/language-switcher/language-switcher.css" />
+<div class="container mt-2 ms-0 mb-2">
+  <div class="dropdown" id="languageSwitcher">
+    <button
+      class="btn btn-outline-primary btn-sm dropdown-toggle d-flex align-items-center gap-2"
+      type="button"
+      id="dropdownLanguageButton"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <span id="selected-language-flag"
+        ><img src="/assets/images/flags/es.svg" width="16"
+      /></span>
+      <span id="selected-language-label">Español</span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownLanguageButton">
+      <li>
+        <a
+          class="dropdown-item d-flex align-items-center gap-2"
+          href="#"
+          onclick="changeLanguage('es')"
+        >
+          <img src="/assets/images/flags/es.svg" width="16" />
+          <span>Español</span>
+        </a>
+      </li>
+      <li>
+        <a
+          class="dropdown-item d-flex align-items-center gap-2"
+          href="#"
+          onclick="changeLanguage('en')"
+        >
+          <img src="/assets/images/flags/us.svg" width="16" />
+          <span>English</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

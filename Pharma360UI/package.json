@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "circle-flags": "github:HatScripts/circle-flags"
+  },
+  "scripts": {
+    "copy-flags": "xcopy node_modules\\circle-flags\\flags\\ assets\\images\\flags\\ /E /I /Y"
+  }
+}

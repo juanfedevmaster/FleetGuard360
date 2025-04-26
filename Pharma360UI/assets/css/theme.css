@@ -1,0 +1,31 @@
+:root {
+    --color-bg-body: #e0f0ff;
+    --color-bg-form: #ffffff;
+    --color-primary: #2f82ff;
+    --color-primary-hover: #1c65d1;
+    --color-text-main: #1e1e2f;
+    --color-text-secondary: #5d6c7a;
+    --color-border: #d8e2ec;
+  }
+  
+  body {
+    background-color: var(--color-bg-body);
+    color: var(--color-text-main);
+  }
+  
+  a {
+    color: var(--color-primary);
+  }
+  
+  a:hover {
+    color: var(--color-primary-hover);
+  }
+  
+  .text-primary {
+    color: var(--color-primary) !important;
+  }
+
+  .bg-primary {
+    background-color: var(--color-primary) !important;
+  }
+  

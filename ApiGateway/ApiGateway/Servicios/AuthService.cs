@@ -39,7 +39,7 @@ namespace ApiGateway.Servicios
         public async Task<LoginResponse> LoginAsync(LoginRequest request)
         {
             var user = await _context.Users
-                .FirstOrDefaultAsync(u => u.Username == request.Username);
+                .FirstOrDefaultAsync(u => u.Email == request.Email);
 
             if (user == null || !BCrypt.Net.BCrypt.Verify(request.Password, user.PasswordHash))
                 return null;
@@ -48,7 +48,7 @@ namespace ApiGateway.Servicios
 
             return new LoginResponse
             {
-                Username = user.Username,
+                Email = user.Email,
                 Token = token
             };
         }

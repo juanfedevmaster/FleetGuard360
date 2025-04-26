@@ -1,0 +1,5 @@
+.carousel-control-prev,
+.carousel-control-next {
+  background: none !important;
+  border-style: none !important;
+}

@@ -1,0 +1,23 @@
+{
+    "dev": {
+      "auth": {
+        "login": "http://localhost:5191/api/Auth/login",
+        "register": "http://localhost:5191/api/Auth/register"
+      },
+      "products": {
+        "getAll": "http://localhost:5191/api/Products",
+        "create": "http://localhost:5191/api/Products/create"
+      }
+    },
+    "prod": {
+      "auth": {
+        "login": "https://api.myapp.com/api/Auth/login",
+        "register": "https://api.myapp.com/api/Auth/register"
+      },
+      "products": {
+        "getAll": "https://api.myapp.com/api/Products",
+        "create": "https://api.myapp.com/api/Products/create"
+      }
+    }
+  }
+  
