@@ -1,0 +1,6 @@
+@Pharma360BasicToken_HostAddress = http://localhost:5094
+
+GET {{Pharma360BasicToken_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
