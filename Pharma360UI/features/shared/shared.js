@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+$(window).on("load", function () {
   fetch("/features/language-switcher/language-switcher.html")
     .then((res) => res.text())
     .then((html) => {
@@ -26,6 +26,18 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   loadLanguage(savedLang);
+
+  fetch('/features/shared/footer.html')
+    .then((res) => res.text())
+    .then((html) => {
+      document.getElementById("footer-container").innerHTML = html;
+      const script = document.createElement("script");
+      script.src = "/features/shared/footer.js";
+      document.body.appendChild(script);
+      loadLanguage(savedLang);
+    });
+
+    
 });
 
 function getClaimsJwt(token) {

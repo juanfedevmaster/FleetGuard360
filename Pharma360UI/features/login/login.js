@@ -14,6 +14,7 @@ async function loginUser(email, password) {
     const claims = getClaimsJwt(result.token);
 
     localStorage.setItem("token", result.token);
+
     return result;
   } catch (err) {
     console.error("Login error:", err.message);
@@ -32,6 +33,6 @@ document
     const loginResult = await loginUser(email, password);
     if (loginResult) {
       // Redirige o muestra algo
-      window.location.href = "/features/home/index.html";
+      window.location.replace("/features/home/index.html");
     }
   });

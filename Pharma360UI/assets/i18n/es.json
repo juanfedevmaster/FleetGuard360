@@ -31,5 +31,9 @@
   "footer_suscriber" : "Suscríbete a nuestro boletín",
   "footer_email_placeholder" : "Ingresa tu correo electrónico",
   "footer_suscriber_button" : "Suscribirme",
-  "footer_suscriber_rights" : "Todos los derechos reservados"
+  "footer_suscriber_rights" : "Todos los derechos reservados",
+  "footer_Products" : "Productos",
+  "footer_Products_1" : "Crear Productos",
+  "footer_Products_2" : "Editar Productos",
+  "footer_Products_3" : "Buscar Productos"
 }

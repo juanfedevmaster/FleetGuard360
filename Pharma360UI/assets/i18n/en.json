@@ -31,5 +31,10 @@
   "footer_suscriber" : "Sign up for our newsletter",
   "footer_email_placeholder" : "Enter your email address",
   "footer_suscriber_button" : "Subscribe",
-  "footer_suscriber_rights" : "All rights reserved"
+  "footer_suscriber_rights" : "All rights reserved",
+  "footer_Products" : "Products",
+  "footer_Products_1" : "Create Products",
+  "footer_Products_2" : "Edit Products",
+  "footer_Products_3" : "Search Products"
+
 }
