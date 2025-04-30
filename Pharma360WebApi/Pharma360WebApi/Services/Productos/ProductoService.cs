@@ -23,7 +23,8 @@ namespace Pharma360WebApi.Services.Productos
                     Nombre = p.Nombre,
                     Precio = p.Precio,
                     Stock = p.Stock,
-                    IdCategoria = p.IdCategoria
+                    IdCategoria = p.IdCategoria,
+                    Descripcion = "<Falta Llenarlo de la base de datos>"
                 }).ToListAsync();
         }
 

@@ -11,5 +11,7 @@ namespace Pharma360WebApi.Models.DOTs
         public decimal Precio { get; set; }
         public int Stock { get; set; }
         public int IdCategoria { get; set; }
+
+        public string Descripcion{ get; set; }
     }
 }
