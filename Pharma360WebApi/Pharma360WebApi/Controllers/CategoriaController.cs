@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Pharma360WebApi.Authorization;
 using Pharma360WebApi.Models.DOTs;
 using Pharma360WebApi.Services.Categoria;
 
@@ -17,6 +18,7 @@ namespace Pharma360WebApi.Controllers
         }
 
         [HttpGet]
+        [HasPermission("perm.category.read")]
         public async Task<ActionResult<IEnumerable<CategoriaDto>>> GetAll()
         {
             var categorias = await _categoriaService.GetAllAsync();
@@ -24,6 +26,7 @@ namespace Pharma360WebApi.Controllers
         }
 
         [HttpGet("{id}")]
+        [HasPermission("perm.category.read")]
         public async Task<ActionResult<CategoriaDto>> GetById(int id)
         {
             var categoria = await _categoriaService.GetByIdAsync(id);
@@ -34,6 +37,7 @@ namespace Pharma360WebApi.Controllers
         }
 
         [HttpPost]
+        [HasPermission("perm.category.create")]
         public async Task<ActionResult<CategoriaDto>> Create(CategoriaDto dto)
         {
             var created = await _categoriaService.CreateAsync(dto);
@@ -41,6 +45,7 @@ namespace Pharma360WebApi.Controllers
         }
 
         [HttpPut("{id}")]
+        [HasPermission("perm.category.update")]
         public async Task<IActionResult> Update(int id, CategoriaDto dto)
         {
             var updated = await _categoriaService.UpdateAsync(id, dto);
@@ -48,6 +53,7 @@ namespace Pharma360WebApi.Controllers
         }
 
         [HttpDelete("{id}")]
+        [HasPermission("perm.category.delete")]
         public async Task<IActionResult> Delete(int id)
         {
             var deleted = await _categoriaService.DeleteAsync(id);
