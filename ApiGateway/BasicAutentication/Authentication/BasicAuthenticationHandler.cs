@@ -4,7 +4,7 @@ using System.Security.Claims;
 using System.Text.Encodings.Web;
 using System.Text;
 
-namespace Pharma360BasicToken.Authentication
+namespace BasicAutentication.Authentication
 {
     public class BasicAuthenticationHandler : AuthenticationHandler<AuthenticationSchemeOptions>
     {
@@ -29,7 +29,7 @@ namespace Pharma360BasicToken.Authentication
                 var password = credentials[1];
 
                 // Validar contra credenciales válidas (mockeado)
-                if (username != "juanfedevmaster" || password != "$2a$11$Ig65Y9vkAA9P69xAnCJWyOvTZGI35TAzQh6U8P0wEAOjUonyPME5q")
+                if (username != "admin" || password != "password123")
                     return AuthenticateResult.Fail("Invalid Username or Password");
 
                 var claims = new[] {

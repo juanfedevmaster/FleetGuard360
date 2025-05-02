@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway.Models", "ApiGat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway.Data", "ApiGateway.Data\ApiGateway.Data.csproj", "{5A42C292-A590-41D5-80FE-6BE63214CA48}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JWT", "JWT", "{704EEE48-E50E-4E23-9DF2-A43BF99B0CD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicAuth", "BasicAuth", "{3CA25FE4-5751-4648-9C09-2022B5CCA95F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicAutentication", "BasicAutentication\BasicAutentication.csproj", "{F1E10EE8-8029-42E6-AAD1-726E10AC1020}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +33,18 @@ Global
 		{5A42C292-A590-41D5-80FE-6BE63214CA48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A42C292-A590-41D5-80FE-6BE63214CA48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A42C292-A590-41D5-80FE-6BE63214CA48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1E10EE8-8029-42E6-AAD1-726E10AC1020}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1E10EE8-8029-42E6-AAD1-726E10AC1020}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1E10EE8-8029-42E6-AAD1-726E10AC1020}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1E10EE8-8029-42E6-AAD1-726E10AC1020}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8F78625B-1558-40C2-BB64-0742CD6E2535} = {704EEE48-E50E-4E23-9DF2-A43BF99B0CD4}
+		{791E0C08-E9DB-449C-9D81-BB24D74D7E9D} = {704EEE48-E50E-4E23-9DF2-A43BF99B0CD4}
+		{5A42C292-A590-41D5-80FE-6BE63214CA48} = {704EEE48-E50E-4E23-9DF2-A43BF99B0CD4}
+		{F1E10EE8-8029-42E6-AAD1-726E10AC1020} = {3CA25FE4-5751-4648-9C09-2022B5CCA95F}
 	EndGlobalSection
 EndGlobal
