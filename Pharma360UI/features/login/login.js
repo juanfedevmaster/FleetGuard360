@@ -1,11 +1,11 @@
 async function loginUser(email, password) {
   try {
     const url = await getEndpoint("auth.login");
-
+    const username = email.split("@")[0];
     const response = await fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ email, password, username }),
     });
 
     if (!response.ok) throw new Error("Login failed");
