@@ -9,8 +9,6 @@ namespace Pharma360WebApi.Models.Entities
         public decimal Precio { get; set; }
         public int Stock { get; set; }
 
-        public string Descripcion { get; set; } = null!;
-
         public int IdCategoria { get; set; }
         public Categoria Categoria { get; set; } = null!;
 
